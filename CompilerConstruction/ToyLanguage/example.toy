@@ -1,0 +1,55 @@
+# Example ToyLanguage script
+
+name = btao("Enter your name: ")
+
+dikhao("Hello", name)
+
+x = 20
+y = x + 7
+
+agar x > y {
+    dikhao("x is bigger than y")
+} yahtu x == y {
+    dikhao("x and y are equal")
+} warna {
+    dikhao("y is bigger than x")
+}
+
+agar name == "Alice" {
+    dikhao("Welcome back, Alice!")
+} warna {
+    dikhao("Nice to meet you,", name)
+}
+
+# Boolean expressions
+valid = sahi
+allowed = galat
+agar valid aur nahi allowed {
+    dikhao("You can enter")
+} warna {
+    dikhao("Access denied")
+}
+
+agar valid ya allowed {
+    dikhao("At least one condition is true")
+}
+
+# while loop with jabtak
+count = 0
+jabtak count < 3 {
+    dikhao("jabtak loop count", count)
+    count = count + 1
+}
+
+# for loop with chalo
+#chalo i = 0; i < 3; i = i + 1 {
+#    dikhao("chalo loop i", i)
+#}
+
+# do-while loop with kro jabtak
+count = 0
+kro {
+    dikhao("kro jabtak loop count", count)
+    count = count + 1
+}
+jabtak (count < 2)
